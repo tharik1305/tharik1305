@@ -67,7 +67,7 @@ class TharikProfile:
 ║             SYSTEM STATUS            ║
 ╠══════════════════════════════════════╣
 ║ Name       : Mohamed Tharik S        ║
-║ Status     : Learning & Building 🟢  ║
+║ Status     : Learning & Building     ║
 ║ Education  : B.Tech Information Tech ║
 ║ Focus      : Cybersecurity           ║
 ║ Internship : SOC Analyst             ║
