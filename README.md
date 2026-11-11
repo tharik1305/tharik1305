@@ -164,6 +164,13 @@ class TharikProfile:
 
 ---
 
+  <h3>🎮 MY PIXEL STUDIO</h3>
+
+  <img src="./pixel-room.svg"
+       width="100%"
+       alt="Mohamed Tharik S - Pixel Room"/>
+
+
 # 🚀 Featured Projects
 
 <table>
@@ -268,6 +275,16 @@ A collection of Java programming exercises and implementations developed while l
 </div>
 
 ---
+
+<h2 align="center">📺 MY GITHUB TELEVISION</h2>
+
+<div align="center">
+  <img src="./tv-set.svg"
+       width="100%"
+       alt="Mohamed Tharik S - Animated GitHub Retro TV"/>
+  <br/>
+  <sub>📡 TUNING INTO MY DIGITAL WORLD</sub>
+</div>
 
 # 🐍 Contribution Snake
 
