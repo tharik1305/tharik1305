@@ -1,0 +1,200 @@
+
+<svg width="900" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020b06"></stop>
+      <stop offset="50%" stop-color="#03140a"></stop>
+      <stop offset="100%" stop-color="#020b06"></stop>
+    </linearGradient>
+
+    <linearGradient id="nameGrad">
+      <stop offset="0%" stop-color="#ffffff"></stop>
+      <stop offset="45%" stop-color="#22c55e"></stop>
+      <stop offset="100%" stop-color="#86efac"></stop>
+    </linearGradient>
+
+    <linearGradient id="accentLine">
+      <stop offset="0%" stop-color="#020b06"></stop>
+      <stop offset="50%" stop-color="#22c55e"></stop>
+      <stop offset="100%" stop-color="#020b06"></stop>
+    </linearGradient>
+
+    <radialGradient id="orb">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity=".25"></stop>
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0"></stop>
+    </radialGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+
+    <clipPath id="clip">
+      <rect width="900" height="280" rx="14"></rect>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect width="900" height="280" fill="url(#bg)"></rect>
+
+    <!-- CYBER GRID -->
+    <g stroke="#22c55e" stroke-width=".5" opacity=".10">
+      <path d="M0 40H900 M0 80H900 M0 120H900 M0 160H900 M0 200H900 M0 240H900"></path>
+      <path d="M40 0V280 M80 0V280 M120 0V280 M160 0V280 M200 0V280 M240 0V280 M280 0V280 M320 0V280 M360 0V280 M400 0V280 M440 0V280 M480 0V280 M520 0V280 M560 0V280 M600 0V280 M640 0V280 M680 0V280 M720 0V280 M760 0V280 M800 0V280 M840 0V280 M880 0V280"></path>
+    </g>
+
+    <!-- GLOWING ORBS -->
+    <ellipse cx="0" cy="0" rx="220" ry="220" fill="url(#orb)">
+      <animate attributeName="rx" values="200;250;200" dur="5s" repeatCount="indefinite"></animate>
+      <animate attributeName="ry" values="200;250;200" dur="5s" repeatCount="indefinite"></animate>
+    </ellipse>
+
+    <ellipse cx="900" cy="280" rx="220" ry="220" fill="url(#orb)">
+      <animate attributeName="rx" values="200;250;200" dur="6s" repeatCount="indefinite"></animate>
+      <animate attributeName="ry" values="200;250;200" dur="6s" repeatCount="indefinite"></animate>
+    </ellipse>
+
+    <!-- CORNER DETAILS -->
+    <g stroke="#22c55e" stroke-width="2" fill="none" opacity=".7">
+      <path d="M14 34V14H34 M866 14H886V34 M14 246V266H34 M866 266H886V246"></path>
+    </g>
+
+    <!-- SECURITY SHIELD -->
+    <g transform="translate(44 96)" filter="url(#glow)">
+      <path d="M38 0L4 13V34C4 52 18 67 38 72C58 67 72 52 72 34V13Z" fill="#22c55e" fill-opacity=".08" stroke="#22c55e" stroke-width="2"></path>
+
+      <path d="M38 13L15 22V35C15 48 25 59 38 64C51 59 61 48 61 35V22Z" fill="none" stroke="#86efac" stroke-opacity=".5"></path>
+
+      <circle cx="38" cy="39" r="11" fill="#22c55e" fill-opacity=".2" stroke="#22c55e">
+        <animate attributeName="opacity" values=".5;1;.5" dur="2s" repeatCount="indefinite"></animate>
+      </circle>
+
+      <rect x="34" y="39" width="8" height="10" rx="2" fill="#22c55e"></rect>
+      <path d="M33 39V35C33 27 43 27 43 35V39" fill="none" stroke="#22c55e" stroke-width="2"></path>
+    </g>
+
+    <!-- ACTIVE STATUS -->
+    <circle cx="68" cy="195" r="4" fill="#22c55e">
+      <animate attributeName="opacity" values="1;.2;1" dur="1s" repeatCount="indefinite"></animate>
+    </circle>
+
+    <text x="78" y="199" fill="#22c55e" font-family="monospace" font-size="11" letter-spacing="2">
+      ACTIVE
+    </text>
+
+    <!-- TAGLINE -->
+    <text x="155" y="92" fill="#22c55e" font-family="monospace" font-size="11" letter-spacing="3">
+      // IT · CYBERSECURITY · JAVA
+    </text>
+
+    <!-- NAME -->
+    <text x="153" y="154" fill="url(#nameGrad)" font-family="Arial Black, sans-serif" font-size="45" font-weight="900" filter="url(#glow)">
+      Mohamed Tharik S
+    </text>
+
+    <!-- SKILL PILLS -->
+    <rect x="154" y="165" width="108" height="24" rx="12" fill="#22c55e" fill-opacity=".10" stroke="#22c55e" stroke-opacity=".6"></rect>
+
+    <text x="168" y="181" fill="#22c55e" font-family="Arial" font-size="11" font-weight="bold">
+      Java Learner
+    </text>
+
+    <rect x="270" y="165" width="112" height="24" rx="12" fill="#86efac" fill-opacity=".10" stroke="#86efac" stroke-opacity=".6"></rect>
+
+    <text x="282" y="181" fill="#86efac" font-family="Arial" font-size="11" font-weight="bold">
+      Cybersecurity
+    </text>
+
+    <rect x="390" y="165" width="100" height="24" rx="12" fill="#15803d" fill-opacity=".15" stroke="#4ade80" stroke-opacity=".6"></rect>
+
+    <text x="402" y="181" fill="#4ade80" font-family="Arial" font-size="11" font-weight="bold">
+      SOC Intern
+    </text>
+
+    <!-- PROFILE STATS -->
+    <g font-family="Arial" text-anchor="middle">
+      <text x="184" y="222" fill="#22c55e" font-size="24" font-weight="bold">IT</text>
+      <text x="184" y="237" fill="#a7b5aa" font-size="9">DEGREE</text>
+
+      <path d="M222 208V240" stroke="#ffffff" stroke-opacity=".15"></path>
+
+      <text x="258" y="222" fill="#22c55e" font-size="21" font-weight="bold">JAVA</text>
+      <text x="258" y="237" fill="#a7b5aa" font-size="9">FOCUS</text>
+
+      <path d="M295 208V240" stroke="#ffffff" stroke-opacity=".15"></path>
+
+      <text x="338" y="222" fill="#22c55e" font-size="24" font-weight="bold">SOC</text>
+      <text x="338" y="237" fill="#a7b5aa" font-size="9">INTERNSHIP</text>
+
+      <path d="M395 208V240" stroke="#ffffff" stroke-opacity=".15"></path>
+
+      <text x="445" y="222" fill="#22c55e" font-size="24" font-weight="bold">2028</text>
+      <text x="445" y="237" fill="#a7b5aa" font-size="9">GRADUATION</text>
+    </g>
+
+    <!-- TERMINAL WINDOW -->
+    <rect x="664" y="44" width="216" height="188" rx="9" fill="#020c06" fill-opacity=".95" stroke="#22c55e" stroke-opacity=".4"></rect>
+
+    <rect x="664" y="44" width="216" height="30" rx="9" fill="#22c55e" fill-opacity=".08"></rect>
+
+    <path d="M664 74H880" stroke="#22c55e" stroke-opacity=".3"></path>
+
+    <circle cx="680" cy="59" r="5" fill="#ff5f57"></circle>
+    <circle cx="696" cy="59" r="5" fill="#febc2e"></circle>
+    <circle cx="712" cy="59" r="5" fill="#28c840"></circle>
+
+    <text x="724" y="63" fill="#a7b5aa" font-family="monospace" font-size="9">terminal</text>
+
+    <!-- TERMINAL COMMANDS -->
+    <g font-family="monospace" font-size="10.5">
+      <text x="676" y="96" fill="#22c55e">$</text>
+      <text x="688" y="96" fill="#e0e0e0">nmap -sV target</text>
+
+      <text x="676" y="112" fill="#a7b5aa">Scanning...</text>
+      <text x="676" y="128" fill="#4ade80">PORT 443 OPEN ✓</text>
+
+      <text x="676" y="150" fill="#22c55e">$</text>
+      <text x="688" y="150" fill="#e0e0e0">whoami</text>
+      <text x="676" y="166" fill="#86efac">Mohamed Tharik S</text>
+
+      <text x="676" y="188" fill="#22c55e">$</text>
+      <text x="688" y="188" fill="#e0e0e0">cat profile.txt</text>
+      <text x="676" y="204" fill="#4ade80">LEARN | BUILD | SECURE</text>
+    </g>
+
+    <!-- BLINKING CURSOR -->
+    <rect x="676" y="212" width="7" height="12" rx="1" fill="#22c55e">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"></animate>
+    </rect>
+
+    <!-- FLOATING PARTICLES -->
+    <g fill="#22c55e">
+      <circle cx="190" cy="280" r="2">
+        <animate attributeName="cy" values="280;0" dur="6s" repeatCount="indefinite"></animate>
+        <animate attributeName="opacity" values="0;.8;0" dur="6s" repeatCount="indefinite"></animate>
+      </circle>
+
+      <circle cx="330" cy="280" r="2">
+        <animate attributeName="cy" values="280;0" dur="8s" begin="1s" repeatCount="indefinite"></animate>
+        <animate attributeName="opacity" values="0;.8;0" dur="8s" repeatCount="indefinite"></animate>
+      </circle>
+
+      <circle cx="490" cy="280" r="2">
+        <animate attributeName="cy" values="280;0" dur="5s" begin="2s" repeatCount="indefinite"></animate>
+        <animate attributeName="opacity" values="0;.8;0" dur="5s" repeatCount="indefinite"></animate>
+      </circle>
+
+      <circle cx="580" cy="280" r="2">
+        <animate attributeName="cy" values="280;0" dur="7s" begin=".5s" repeatCount="indefinite"></animate>
+        <animate attributeName="opacity" values="0;.8;0" dur="7s" repeatCount="indefinite"></animate>
+      </circle>
+    </g>
+
+    <!-- BOTTOM NEON LINE -->
+    <rect x="0" y="276" width="900" height="4" fill="url(#accentLine)"></rect>
+
+  </g>
+</svg>
