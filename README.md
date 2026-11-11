@@ -64,16 +64,16 @@ class TharikProfile:
 
 ```text
 ╔══════════════════════════════════════╗
-║             SYSTEM STATUS             ║
+║             SYSTEM STATUS            ║
 ╠══════════════════════════════════════╣
-║ Name       : Mohamed Tharik S         ║
-║ Status     : Learning & Building 🟢   ║
-║ Education  : B.Tech Information Tech  ║
-║ Focus      : Cybersecurity            ║
-║ Internship : SOC Analyst              ║
-║ Language   : Java                     ║
-║ Practice   : Data Structures & Algo    ║
-║ Projects   : Kallvettu                ║
+║ Name       : Mohamed Tharik S        ║
+║ Status     : Learning & Building 🟢  ║
+║ Education  : B.Tech Information Tech ║
+║ Focus      : Cybersecurity           ║
+║ Internship : SOC Analyst             ║
+║ Language   : Java                    ║
+║ Practice   : Data Structures & Algo  ║
+║ Projects   : Kallvettu               ║
 ╚══════════════════════════════════════╝
 ```
 
