@@ -2,7 +2,7 @@
   <img src="banner.svg" width="100%" alt="Mohamed Tharik S Banner">
 </p>
 
-<p align="center" font-size ="30px">
+<p align="center">
 👨‍💻 Mohamed Tharik S
 </p>
 
