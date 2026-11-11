@@ -255,23 +255,7 @@ A collection of Java programming exercises and implementations developed while l
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=tharik1305&show_icons=true&theme=tokyonight&hide_border=true"/>
-
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tharik1305&layout=compact&theme=tokyonight&hide_border=true"/>
-
-<br/>
-
 <img width="70%" src="https://streak-stats.demolab.com?user=tharik1305&theme=tokyonight&hide_border=true"/>
-
-</div>
-
----
-
-# 📈 Contribution Activity
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=tharik1305&theme=tokyo-night&hide_border=true&area=true"/>
 
 </div>
 
