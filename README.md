@@ -283,6 +283,15 @@ A collection of Java programming exercises and implementations developed while l
 
 ---
 
+ <h3>🏙️ MY DIGITAL CITY</h3>
+
+  <img src="./city.svg"
+       width="100%"
+       alt="Mohamed Tharik S - Digital City"/>
+
+  <br/><br/>
+
+
 # 🌐 Connect With Me
 
 <div align="center">
