@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-👨‍💻 Mohamed Tharik S
+#👨‍💻 Mohamed Tharik S
 </p>
 
 <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=26&pause=1000&color=00F7FF&center=true&vCenter=true&width=850&lines=Information+Technology+Student;Cybersecurity+Enthusiast;Java+Developer;SOC+Analyst+Intern;Learning+DSA+%26+Building+Projects" />
