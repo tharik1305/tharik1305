@@ -2,7 +2,7 @@
 """Regenerate the retro TV using live GitHub statistics."""
 import json, os, re, urllib.request
 from pathlib import Path
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 USER = os.environ.get("GITHUB_PROFILE", "tharik1305")
 TOKEN = os.environ["GH_STATS_TOKEN"]
@@ -18,17 +18,24 @@ def request(url, payload=None):
         return json.load(r)
 
 user = request(f"https://api.github.com/users/{USER}")
+now = datetime.now(timezone.utc)
+start = now - timedelta(days=365)
+# Match GitHub's rolling "last year" contribution window.
 graphql = request("https://api.github.com/graphql", {"query": """
-query($login: String!) {
+query($login: String!, $from: DateTime!, $to: DateTime!) {
   user(login: $login) {
-    contributionsCollection {
+    contributionsCollection(from: $from, to: $to) {
       contributionCalendar { totalContributions }
       totalCommitContributions
       totalPullRequestContributions
     }
   }
 }
-""", "variables": {"login": USER}})
+""", "variables": {
+    "login": USER,
+    "from": start.isoformat().replace("+00:00", "Z"),
+    "to": now.isoformat().replace("+00:00", "Z"),
+}})
 if graphql.get("errors"): raise RuntimeError(graphql["errors"])
 collection = graphql["data"]["user"]["contributionsCollection"]
 contrib = collection["contributionCalendar"]["totalContributions"]
@@ -57,6 +64,9 @@ for i, (label, value) in enumerate(lines):
              f'<text x="460" y="{y}" font-family="monospace" font-size="26" font-weight="bold" fill="#7ee787">{value:,}</text>']
 body.append('</g>')
 svg = svg[:start] + ''.join(body) + svg[end:]
+# Keep Channel 04's contribution summary in sync with the same rolling 365-day total.
+svg = re.sub(r'last 26 weeks · \d+ contributions',
+             f'last 365 days · {contrib} contributions', svg)
 # Show when data was last fetched, not a misleading live counter.
 stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 svg = svg.replace('</svg>', f'<text x="440" y="501" text-anchor="middle" font-family="monospace" font-size="10" fill="#7ee787">UPDATED {stamp}</text></svg>')
