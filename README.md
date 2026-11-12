@@ -276,14 +276,13 @@ A collection of Java programming exercises and implementations developed while l
 
 ---
 
-<h2 align="center">📺 MY GITHUB TELEVISION</h2>
+
+<h2 align="center">📺 LIVE GITHUB DASHBOARD</h2>
 
 <div align="center">
   <img src="./tv-set.svg"
        width="100%"
-       alt="Mohamed Tharik S - Animated GitHub Retro TV"/>
-  <br/>
-  <sub>📡 TUNING INTO MY DIGITAL WORLD</sub>
+       alt="Mohamed Tharik S - Dynamic GitHub Stats TV"/>
 </div>
 
 # 🐍 Contribution Snake
